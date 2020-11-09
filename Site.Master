@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LestoCargo.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesto Cargo</title>
+    <link href="Images/FavIcon.png" rel="shortcut icon" />
+    <!-- ARQUIVO CSS --->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <!-- OPEN SANS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- SLIDE --->
+    <link href="js/flexslider.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="content-wrapper">
+            <div class="cabecalho">
+                <div class="logomarca">
+                    <a href="/Default.aspx">
+                        <img src="/Images/Logo.png" /></a>
+                </div>
+                <div class="usuario">
+                    <asp:Label ID="Nome" runat="server"></asp:Label>
+                </div>
+                <div class="menu">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Orders.aspx">Fazer Cotação</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Sobre.aspx" runat="server">Sobre</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Contato.aspx" runat="server">Contato</asp:HyperLink>
+                    <asp:HyperLink ID="Login" NavigateUrl="Login.aspx" runat="server">Login</asp:HyperLink>
+                    <div class="dropdown">
+                        <asp:Button Font-Size="12" BorderStyle="none" OnClientClick="return false" CssClass="dropbtn" ID="dropbtn" runat="server" Text="Administrativo" />
+                        <div class="dropdown-content">
+                            <asp:HyperLink ID="Cotacoes" runat="server" NavigateUrl="~/Admin/Dashboard.aspx">Cotações</asp:HyperLink>
+                            <asp:HyperLink ID="InserirUsuarios" NavigateUrl="~/Admin/InserirUsuarios.aspx" runat="server">Inserir Funcionários</asp:HyperLink>
+                            <asp:HyperLink ID="ViewExceptions" runat="server" NavigateUrl="~/Admin/ViewExceptions.aspx">Ver Exceções</asp:HyperLink>
+                        </div>
+                    </div>
+                    <asp:HyperLink ID="Logout" NavigateUrl="~/Logout.aspx" runat="server">Sair</asp:HyperLink>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo content-wrapper">
+            <!-- CONTEUDO --->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="content-wrapper">
+                <div class="footer-text">
+                    Copyright © 2020 - <strong>Lesto Cargo</strong><br />
+                    Desenvolvido por <strong>Edson dos Santos Junior</strong>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,493 @@
+﻿* {
+	-webkit-box-sizing: border-box !important; /* Safari/Chrome */
+	-moz-box-sizing: border-box !important; /* Firefox */
+	box-sizing: border-box !important; /* IE8+/ Opera */
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Open Sans;
+	font-size: 14px;
+	text-align: left;
+	line-height: 150%; /* define a altura da linha de texto */
+	color: #333333;
+	
+}
+/************************************* 
+	RECURSOS PARA LAYOUT EM COLUNAS 
+**************************************/
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+/* Linha para criar as colunas */
+.row{
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.col-12{
+	width: 100%;
+}
+
+.col-11{
+	width: 91.66666666%;
+}
+
+.col-10{
+	width: 83.3333333%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-8{
+	width: 66.66666667%;
+}
+
+.col-7{
+	width: 58.33333333%;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-5{
+	width: 41.66666667%;
+}
+
+.col-4{
+	width: 33.33333333%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-2{
+	width: 16.66666667%;
+}
+
+.col-1{
+	width:8.33333333%;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+	height: 100px;
+	width: 100%;
+	position: relative;
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 5px 1px #7c7c7c;
+}
+/*DROPDOWN MENU COTACAO*/
+.dropdown-menu {
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-menu-content {
+	display: none;
+	margin-top: 0px;
+	position: absolute;
+	background-color: #f9f9f9;
+	width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-menu-content a {
+	padding: 5px;
+	color: black;
+	line-height: 32px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-menu-content a:hover {
+	color: #c22126;
+	background-color: #f1f1f1;
+}
+
+.dropdown-menu:hover .dropdown-menu-content {
+	display: block;
+}
+
+.dropdown-menu:hover .dropmenubtn {
+	background-color: #c2c2c2;
+	color: #c22126;
+}
+/*DROPDOWN MENU TOPO*/
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	left: -6px;
+	margin-top: -32px;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+			
+	background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #c2c2c2;
+	color: #c22126;
+}
+.usuario {
+	position: absolute;
+	top: 0;
+	left: 90px;
+}
+
+.logomarca{
+	width:90px;
+	height:90px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.menu {
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	line-height: 7.5em;
+}
+
+.menu a{
+	color:#333333;
+	font-size:16px;
+	margin-left:4px;
+	margin-right:4px;
+	padding-bottom:2px;
+	text-decoration:none;
+}
+
+.menu a:hover{
+	color:#c22126;
+}
+
+.conteudo {
+	min-height: 800px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px #7c7c7c;
+}
+.background{
+	margin-top: 40px;
+	background-color: rgb(243, 243, 243);
+}
+.cartao{
+	margin-left: auto;
+}
+.cartao img {
+	width: 100%;
+	-webkit-transition: all 0.5s ease;
+	/* Safari and Chrome */
+	-moz-transition: all 0.5s ease
+}
+.cartao:hover img {
+	-webkit-transform: scale(1.60);
+	/* Safari and Chrome */
+	-moz-transform: scale(1.60);
+	/* Firefox */
+	-ms-transform: scale(1.60);
+	/* IE 9 */
+	-o-transform: scale(1.60);
+	/* Opera */
+	transform: scale(1.60);
+}
+.home-text{
+	text-align: justify;
+	line-height: 26px;
+	margin-top: 30px;
+}
+.pesquisa{
+	margin-left: 200px;
+}
+.icones{
+	text-align: center;
+	margin-top: 20px;
+}
+.icone{
+	height: 70px;
+	margin-top: 20px;
+}
+.icone img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.icone-texto {
+	margin-left: 30px;
+	margin-top: -80px;
+}
+.link-cotacao {
+	color: #333333;
+	font-size: 18px;
+	text-decoration: none;
+}
+.link-cotacao:hover {
+	color: #c22126;
+}
+.imagem-fundo {
+	background-image: linear-gradient( rgba(255, 255, 255, 0.90) 0%,rgba(255,255,255,0.90) 100%), url('Images/LogoGrande.png');
+	background-size: 100% 100%;
+}
+.login {
+	box-shadow: 0px 0px 3px 1px #888888;
+	margin-top: 200px;
+	margin-bottom: 350px;
+}
+.contato1 {
+	padding: 30px;
+	margin-top: 20px;
+	line-height: 24px;
+	text-align: justify;
+
+}
+.contato1 img{
+	max-width: 580px;
+}
+.box-contato {
+	box-shadow: -2px 0px 5px 0px #888888;
+	padding: 30px;
+}
+
+.footer {
+	margin-top: 60px;
+	height: 85px;
+	background-color: #dddddd;
+	padding: 15px;
+}
+.footer-text{
+	text-align: center;
+	margin-top: 10px;
+}
+/***********************************/
+/*              COTACOES           */
+/***********************************/
+.menu-cotacao{
+	position: relative;
+	width: 100%;
+	float: right;
+	display: inline-flex;
+}
+
+.btn-menu-cotacao a {
+	text-decoration: none;
+	color: #333333;
+}
+.btn-menu-cotacao{
+	float: right;
+	display: inline-flex;
+}
+.btn-cotacao{
+	padding: 10px;
+}
+
+/***********************************/
+/*             DASHBOARD           */
+/***********************************/
+.dashboard {
+	box-shadow: 0px 0px 3px 1px #6f6f6f;
+	padding: 20px;
+	margin: 5px;
+	text-align: center;
+}
+/***********************************/
+/*          CLASSES DIVERSAS       */
+/***********************************/
+.margin-top-120px{
+	margin-top: 120px;
+}
+.margin-top-60px{
+	margin-top: 60px;
+}
+.margin-top-20px{
+	margin-top: 20px;
+}
+.padding-10px{
+	padding: 10px;
+}
+.box-padding-30px{
+	padding: 30px;
+}
+.margin-left-200px{
+	margin-left:200px;
+}
+.padding-left-30px{
+	padding-left: 30px;
+}
+.centralizar{
+	display: flex;
+	justify-content: center;
+}
+
+/************************************/
+/*     CONTROLE DE FORMULARIOS      */
+/************************************/
+
+label{
+	margin-top: 20px;
+	display: block;
+	max-width: 100%;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+	border: 1px solid #d7d7d7;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.8);
+	color: #555;
+	font-size: 16px;
+	display: block;
+	padding: 10px;
+	resize: none;
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+input[type=submit],
+input[type=button],
+button {
+	border: 1px solid #c0c0c0;
+	border-radius: 4px;
+	color: #555;
+	background-color: #e4e4e4;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 20px;
+}
+
+ input[type="submit"]:hover,
+ input[type="button"]:hover,
+ button:hover {
+	background-color: #c0c0c0;
+	color: #222;
+}
+
+@media only screen and (max-width: 768px) {
+
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	[class*="box-border"] {
+		border: 0px;
+	}
+
+	.cabecalho {
+		height: 100px;
+		width: 100%;
+		position: relative;
+		border: 1px solid rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 5px 1px #7c7c7c;
+	}
+
+	.logomarca {
+		width: 70px;
+		height: 70px;
+	}
+
+	.logomarca img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.menu {
+		position: absolute;
+		max-width: 350px;
+		margin-top: 10px;
+		left: 20%;
+		line-height: 40px;
+	}
+
+	.dropdown-content {
+		margin-top: 0px;
+	}
+
+	.cartao {
+		margin-left: 0px;
+	}
+
+	.cartao img {
+		width: 100%;
+		height: 100%;
+		-webkit-transition: none;
+		/* Safari and Chrome */
+		-moz-transition: none;
+	}
+
+	.cartao:hover img {
+		transform: none;
+	}
+
+	.contato1 img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) {
+
+	.cabecalho {
+		height: 110px;
+		width: 100%;
+	}
+	.logomarca {
+		width: 60px;
+		height: 60px;
+		margin-top: 23px;
+	}
+	.menu {
+		position: absolute;
+		margin-top: 15px;
+		width: 280px;
+		margin-right: 3px;
+	}
+}
+
+
