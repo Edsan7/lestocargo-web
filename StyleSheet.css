@@ -269,10 +269,6 @@ display: inline-block;
 .link-cotacao:hover {
 	color: #c22126;
 }
-.imagem-fundo {
-	background-image: linear-gradient( rgba(255, 255, 255, 0.90) 0%,rgba(255,255,255,0.90) 100%), url('Images/LogoGrande.png');
-	background-size: 100% 100%;
-}
 .login {
 	box-shadow: 0px 0px 3px 1px #888888;
 	margin-top: 200px;

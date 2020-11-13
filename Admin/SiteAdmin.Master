@@ -29,10 +29,10 @@
                 </div>
                 <div class="menu">
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Orders.aspx">Fazer Cotação</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Sobre.aspx" runat="server">Sobre</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Contato.aspx" runat="server">Contato</asp:HyperLink>
-                    <asp:HyperLink ID="Login" NavigateUrl="~/Login.aspx" runat="server">Login</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Orders.aspx">Fazer Cotação</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Pages/Sobre.aspx" runat="server">Sobre</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Pages/Contato.aspx" runat="server">Contato</asp:HyperLink>
+                    <asp:HyperLink ID="Login" NavigateUrl="~/Pages/Login.aspx" runat="server">Login</asp:HyperLink>
                     <div class="dropdown">
                         <asp:Button Font-Size="12" BorderStyle="none" OnClientClick="return false" CssClass="dropbtn" ID="dropbtn" runat="server" Text="Administrativo" />
                         <div class="dropdown-content">
@@ -41,7 +41,7 @@
                             <asp:HyperLink ID="ViewExceptions" runat="server" NavigateUrl="~/Admin/ViewExceptions.aspx">Ver Exceções</asp:HyperLink>
                         </div>
                     </div>
-                    <asp:HyperLink ID="Logout" NavigateUrl="~/Logout.aspx" runat="server">Sair</asp:HyperLink>
+                    <asp:HyperLink ID="Logout" NavigateUrl="~/Pages/Logout.aspx" runat="server">Sair</asp:HyperLink>
                 </div>
             </div>
         </div>
