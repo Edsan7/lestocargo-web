@@ -57,7 +57,7 @@ namespace LestoCargo
                         Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, FormsAuthentication.Encrypt(ticket)));
 
                         // redirecionar para a Dasboard
-                        Response.Redirect("~/Admin/Dashboard.aspx");
+                        Response.Redirect("~/Pages/Admin/Dashboard.aspx");
                     }
                     else
                     {

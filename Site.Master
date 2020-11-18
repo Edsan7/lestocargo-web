@@ -13,9 +13,9 @@
     <!-- OPEN SANS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- SLIDE --->
-    <link href="js/flexslider.css" rel="stylesheet" />
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
+    <link href="js/flexslider/flexslider.css" rel="stylesheet" />
+    <script src="js/flexslider/jquery-1.7.2.min.js"></script>
+    <script src="js/flexslider/jquery.flexslider.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -39,9 +39,9 @@
                     <div class="dropdown">
                         <asp:Button Font-Size="12" BorderStyle="none" OnClientClick="return false" CssClass="dropbtn" ID="dropbtn" runat="server" Text="Administrativo" />
                         <div class="dropdown-content">
-                            <asp:HyperLink ID="Cotacoes" runat="server" NavigateUrl="~/Admin/Dashboard.aspx">Cotações</asp:HyperLink>
-                            <asp:HyperLink ID="InserirUsuarios" NavigateUrl="~/Admin/InserirUsuarios.aspx" runat="server">Inserir Funcionários</asp:HyperLink>
-                            <asp:HyperLink ID="ViewExceptions" runat="server" NavigateUrl="~/Admin/ViewExceptions.aspx">Ver Exceções</asp:HyperLink>
+                            <asp:HyperLink ID="Cotacoes" runat="server" NavigateUrl="~/Pages/Admin/Dashboard.aspx">Cotações</asp:HyperLink>
+                            <asp:HyperLink ID="InserirUsuarios" NavigateUrl="~/Pages/Admin/InserirUsuarios.aspx" runat="server">Inserir Funcionários</asp:HyperLink>
+                            <asp:HyperLink ID="ViewExceptions" runat="server" NavigateUrl="~/Pages/Admin/ViewExceptions.aspx">Ver Exceções</asp:HyperLink>
                         </div>
                     </div>
                     <asp:HyperLink ID="Logout" NavigateUrl="~/Pages/Logout.aspx" runat="server">Sair</asp:HyperLink>
